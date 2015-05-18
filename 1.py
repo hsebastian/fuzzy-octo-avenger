@@ -1,6 +1,4 @@
 """
-http://www.pythonchallenge.com/pc/def/map.html
-
 k -> m
 o -> q
 e -> g
