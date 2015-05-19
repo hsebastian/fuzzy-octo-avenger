@@ -1253,7 +1253,7 @@ dCdFLtBQPtFQuCdKOrpndJNUFQIDSbetUKylhSUjcDVtbiQrWMRQhAwGUZyPneCGUjGBBTkLqxLAXXtB
 KfErkDaWMFZZeuqDmXKJEGHyToPUhPphfVhgUZgbIuRAtWnroImpJKqqmEZqeNQCKzhjIkKQHURWLXFw
 PBuijeoTSpsVLaOGuLVjMZXkBvVXwUuHfBihziiavGSYofPNeKsTXruMUumRRPQJzvSzJkKbtSipiqBd
 """
-match = re.search(r'[A-Z]{3,3}[a-z]{1}[A-Z]{3,3}', body)
-if match is not None:
-    print match.group(0)
-
+matches = re.findall(r'[a-z]+[A-Z]{3}([a-z]{1})[A-Z]{3}[a-z]+', body)
+for match in matches:
+    print match
+print ''.join(matches)
